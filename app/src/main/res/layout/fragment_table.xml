@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.TableFragment">
+
+    <!-- Header Row -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3"
+        android:layout_margin="5dp">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/userId"
+                android:layout_width="102dp"
+                android:gravity="center"
+                android:text="EMAIL"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/usernameId"
+                android:text="Username"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/projectId"
+                android:text="LEVEL"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:gravity="center"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- RecyclerView to display table rows -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"/>
+
+</FrameLayout>
